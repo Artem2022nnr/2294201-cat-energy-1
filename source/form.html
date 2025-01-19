@@ -33,13 +33,15 @@
               Подбор программы
             </a>
           </li>
+          </ul>
       </div>
     </nav>
   </header>
 
   <form class="menu__form" action="" method="get" class="form-example">
-    <h1 class="visually-hidden">Заполните анкету, и мы подберем<br>
+    <h1>Заполните анкету, и мы подберем<br>
       программу питания для вашего кота</h1>
+      <fieldset>
     <div class="form-example">
       <label for="name">имя:* </label>
       <input type="text" name="name" id="name" required />
@@ -52,6 +54,7 @@
       <label for="email">возраст (лет):</label>
       <input type="email" name="email" id="email" required />
     </div>
+  </fieldset>
 
     <fieldset class="block-radiobutton">
       <ul class="block-radiobutton__group">
@@ -67,26 +70,32 @@
       </ul>
     </fieldset>
 
-    <h2 class="visually-hidden">Контактные данные<br>
+    <h2>Контактные данные<br>
       (владельца кота)</h2>
 
-    <fieldset class="form-contact">
+    <fieldset class="visually-hidden" class="form-contact">
+      <div>
       <label for="email">E-mail:* </label>
       <input type="email" placeholder="kuklachev@gmail.com" id="email" name="email" />
+      </div>
 
+      <div>
       <label for="phone">Телефон: </label>
       <input type="tel" placeholder="8(960)900-60-90" id="phone" name="phone" />
+       <label for="email">вес:</label>
+      <input type="email" name="email" id="email" required />
+    </div>
     </fieldset>
 
-    <h2 class="visually-hidden">Комментарий</h2>
+    <h2>Комментарий</h2>
 
-    <fieldset class="comment">
+    <fieldset class="visually-hidden" class="comment">
       <textarea name="comment">Расскажите обо всех повАдках кота</textarea>
     </fieldset>
 
-    <h2 class="visually-hidden">Дополнительно</h2>
+    <h2>Дополнительно</h2>
 
-    <fieldset class="checkbox">
+    <fieldset class="visually-hidden" class="checkbox">
 
       <ul class="checkbox-catalog">
         <li class="checkbox-catalog__item">
@@ -104,21 +113,26 @@
         <li class="checkbox-catalog__item">
           <input class="control-input" type="checkbox" value="pool" name="infrastructure">Витамины
         </li>
-        <input type="button" value="Отправить заявку">
-        <span class="visually-hidden">*- Обязательные поля</span>
+
+      </div>
+
       </ul>
     </fieldset>
 
-    <fieldset class="contact-map">
-      <div>приглашаем к сотрудничеству дилеров!</div>
-      <div>ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</div>
-
-      <!-- карта локации-->
-
-    </fieldset>
-
+    <div>
+      <button type="submit">Отправить заявку</button>
+      <span>*- Обязательные поля</span>
+      </div>
 
   </form>
+
+  <div class="contact-map">
+    <div>приглашаем к сотрудничеству дилеров!</div>
+    <div>ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</div>
+
+    <!-- карта локации-->
+
+  </div>
 
   <footer class="main-footer">
     <div class="main-footer__logo">
